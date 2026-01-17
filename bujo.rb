@@ -5,21 +5,21 @@
 class Bujo < Formula
   desc "Terminal-based Bullet Journal tool"
   homepage "https://github.com/samakintunde/bujo"
-  version "0.1.1"
+  version "0.1.2"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samakintunde/bujo/releases/download/v0.1.1/bujo_Darwin_x86_64.tar.gz"
-      sha256 "962e6d1ba16e17e291c7a0cebdbb0523a13b36dc227e883e91cf58b008e634a8"
+      url "https://github.com/samakintunde/bujo/releases/download/v0.1.2/bujo_Darwin_x86_64.tar.gz"
+      sha256 "289a2f83771cad09436400083b49220b4127dd99ae57d7d18a4f52d010157fb8"
 
       def install
         bin.install "bujo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samakintunde/bujo/releases/download/v0.1.1/bujo_Darwin_arm64.tar.gz"
-      sha256 "23a152787c15b3a568fe28a592c4d0dbe548018e1c77259f4ea3edc1032f7407"
+      url "https://github.com/samakintunde/bujo/releases/download/v0.1.2/bujo_Darwin_arm64.tar.gz"
+      sha256 "66311ab6d657a22e25bdb67aed5d0423f15dc03212a362b82fcabedd38e20083"
 
       def install
         bin.install "bujo"
@@ -29,15 +29,15 @@ class Bujo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samakintunde/bujo/releases/download/v0.1.1/bujo_Linux_x86_64.tar.gz"
-      sha256 "aefc0428fe5c159eefa6027f2370d4051142e81447bde6125ee04a9e8a6b22bb"
+      url "https://github.com/samakintunde/bujo/releases/download/v0.1.2/bujo_Linux_x86_64.tar.gz"
+      sha256 "841c10b0b17cdac2e8bce77b2a98db02d12eb0c467d72064cfcc28022ef9fa8f"
       def install
         bin.install "bujo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samakintunde/bujo/releases/download/v0.1.1/bujo_Linux_arm64.tar.gz"
-      sha256 "dd0262072dfc659ed00dff6cc6a85707b3637ccd8f1fe6c5361c7ac0b7a40bd9"
+      url "https://github.com/samakintunde/bujo/releases/download/v0.1.2/bujo_Linux_arm64.tar.gz"
+      sha256 "da817006b5b8d7044a83040dadec07434652d4b6b3b6b4cd7e55962dc254c451"
       def install
         bin.install "bujo"
       end
